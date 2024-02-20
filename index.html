@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/chat 1.png" type="image/png">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Ziyad CHAABI</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/chat 1.png">
+            <a href="index.html">Ziyad CHAABI</a>
+        </div>
+        <ul>
+            <li><a href="#main">Acceil</a></li>
+            <li><a href="#skills">Compétance</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#portfolio">Projets</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+
+        <a href="mailto:ziyad.chaabi@lasalle-troyes.fr">
+            <button>Contact</button>
+        </a>
+
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Bonjour, je m'appelle Ziyad</h5>
+            <h3>Étudiant <span>Développeur Web Full Stack</span> à votre service🫡</h3>
+            <p>
+                De la conception à la mise en œuvre, je transforme des idées en solutions innovantes, alliant expertise technique et créativité.
+            </p>
+            <a href="assets/CV_Ziyad-CHAABI.pdf" target="_blank">
+                <button>View My CV</button>
+              </a>
+        </div>
+        <div class="right">
+            <img src="assets/PP 1.png">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>Mes Compétences</h5>
+        <h3>Mes Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-directions'></i></div>
+                <h4>Stratégie et Direction</h4>
+                <p>
+                    Ma démarche repose sur une compréhension approfondie des besoins, guidant chaque décision vers des résultats durables et alignés sur les objectifs.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                <h4>Branding et Logo</h4>
+                <p>
+                    Chaque conception est imprégnée de stratégie et de créativité, visant à capturer l'essence unique de chaque entreprise.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>UI et UX Design</h4>
+                <p>
+                    Chaque élément visuel est soigneusement pensé pour offrir une expérience utilisateur intuitive.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+                <h4>Codage</h4>
+                <p>
+                    Chaque ligne de code que je rédige est une expression de précision et d'efficacité. Ma polyvalence s'étend du front-end au back-end, maîtrisant divers langages pour construire des solutions novatrices.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="assets/PP2.png">
+        </div>
+        <div class="right">
+            <h5>À propos</h5>
+            <h3>À propos de moi</h3>
+            <p>En tant que développeur Web Full Stack passionné, je m'engage à créer des expériences numériques exceptionnelles. Mon parcours combine une solide expertise technique avec une créativité sans limites, me permettant de concevoir des solutions innovantes.</p>
+
+            <p>Mon amour pour le développement web va au-delà du simple codage. Je suis fasciné par les IA et l'intersection entre l'esthétique et la fonctionnalité, et c'est cette fusion qui guide mon approche en conception UI/UX. Chaque projet est une opportunité de repousser les limites, d'apprendre de nouvelles technologies et d'apporter une valeur ajoutée à mes clients.</p>
+
+            <p>En dehors du monde du développement, je suis un curieux invétéré, toujours avide d'apprendre. Que ce soit à travers la découverte de nouvelles technologies, la lecture de livres de manga et webtoon pour développer ma perspectives et mon imagination personnel, je crois fermement en l'apprentissage continu.</p>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Projets récents</h5>
+                <h3>Mes projets</h3>
+            </div>
+            <a href="/pages/projets.html"><button>Voir tous les projets</button></a>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="/assets/reseau.png">
+                <div class="info">
+                    <h4>Réseaux Sûr France</h4>
+                    <p>Création d'un site vitrine pour une entreprise d'électriciter et de domotique.</p>
+                    <a href="https://reseausurfrance.fr">En savoir plus <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/potrie.png">
+                <div class="info">
+                    <h4>Web documentaire artisant</h4>
+                    <p>
+                        Création d'un site vitrine pour présenter notre intervieux journalistique sur les metier d'artisana.
+                    </p>
+                    <a href="https://web-documentaire-artisant.netlify.app">En savoir plus <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/salaire.png">
+                <div class="info">
+                    <h4>Calculateur de salaire brut en net</h4>
+                    <p>
+                        Création d'une application web pour calculer et convertir le salaire brut en salaire net.
+                    </p>
+                    <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/">En savoir plus <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback" id="feedback">
+        <h5>Avis des clients</h5>
+        <h3>Retours des clients</h3>
+        <div class="customers">
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    Le 4 juillet 2023, Karima occupait une fonction plus élevée que Ziyad, mais n’était pas le/la manager direct(e) de Ziyad Le 4 juillet 2023, Karima occupait une fonction plus élevée que Ziyad, mais n’était pas le/la manager direct(e) de Ziyad
+                    Durant sa période de stage, ziyad Chaabi a pu découvrir les différentes activités administratives et techniques de notre Centre médical. 
+
+                    Celui-ci a sû s’adapter très vite au fonctionnement des différents postes. Pendant l’observation, ils nous a également apporter des idées afin de compléter notre planning du personnel en créant un tableau qui permet de calculer les heures de travail journalières et ainsi visualiser le nombre d’heures supplémentaires de chaque employé. 
+
+                    Mr. Ziyad CHAABI a eu un comportement sérieux et exemplaire envers les patients et s’est très bien intégré avec l’équipe médical. 
+
+                    Nous lui souhaitons une bonne continuation.
+                </p>
+                <div class="user">
+                    <img src="/assets/mam.jpg">
+                    <div class="info">
+                        <h5>Karima Ghezza</h5>
+                        <p>Orthoptiste</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    Ziyad, a su mettre en avant ses compétences et son savoir-faire pour la réalisation de ses missions tout au long de son stage. Il s'est adapté très rapidement à l'entreprise, a sa charte graphique ainsi qu'à son fonctionnement.
+
+                    Sa maîtrise des logiciels de conception graphique a été exceptionnelle, ce qui s'est traduit par des créations visuelles de haute qualité et une contribution significative à notre stratégie de marketing en ligne.
+
+                    Malgré les modifications de dernière minute apportées à un projet, Ziyad a fait preuve d'une grande flexibilité et a réussi à s'adapter rapidement aux nouvelles exigences, contribuant ainsi à son achèvement dans les délais impartis.
+
+                    Son professionnalisme, sa collaboration et son autonomie ont été des atouts précieux pour atteindre nos obiectifs. Nous sommes convaincus que Ziyad est prêt à relever de nouveaux défis dans sa carrière et nous sommes reconnaissants d'avoir pu bénéficier de ses talents pendant cette période.
+
+                    Nous lui souhaitons beaucoup de succès dans ses projets futurs.
+                </p>
+                <div class="user">
+                    <img src="/assets/juju.jpg">
+                    <div class="info">
+                        <h5>Juliana Rebelo</h5>
+                        <p>marketing et communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="/assets/chat 1.png">
+                <a href="/index.html">Ziyad CHAABI</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/Subdij"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/ziyad_chb/?hl=fr"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/ziyad-chaabi/"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                © 2024 Portfolio Ziyad CHAABI. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
