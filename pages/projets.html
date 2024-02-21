@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="assets/chat 1.png" type="image/png">
-    <link rel="stylesheet" href="/Styles/projets.css">
+    <link rel="icon" href="/assets/chat 1.png" type="image/png">
+    <link rel="stylesheet" href="/Styles/style.css">
     <title>Ziyad CHAABI</title>
 </head>
 
@@ -18,11 +18,11 @@
             <a href="/index.html">Ziyad CHAABI</a>
         </div>
         <ul>
-            <li><a href="#main">Acceil</a></li>
-            <li><a href="#skills">Compétance</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#portfolio">Projets</a></li>
-            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/index.html#skills">Compétences</a></li>
+            <li><a href="/pages/projets.html">Projets</a></li>
+            <li><a href="/index.html#about">Á propos</a></li>
+            <li><a href="/index.html#feedback">Avies</a></li>
         </ul>
 
         <a href="mailto:ziyad.chaabi@lasalle-troyes.fr">
@@ -41,65 +41,93 @@
             </div>
         </div>
 
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">Tous</button>
+            <button onclick="filterProjects('site-web')">Site Web</button>
+            <button onclick="filterProjects('video')">Vidéo</button>
+        </div>
+
         <div class="portfo-items">
-            <div class="item">
-                <img src="/assets/reseau.png">
+            <a href="/pages/Réseaux-Sûr-France.html" class="item site-web">
+                <img src="/assets/antene.jpg">
                 <div class="info">
                     <h4>Réseaux Sûr France</h4>
-                    <p>Création d'un site vitrine pour une entreprise d'électriciter et de domotique.</p>
-                    <a href="https://reseausurfrance.fr">En savoir plus <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/potrie.png">
-                <div class="info">
-                    <h4>Web documentaire artisant</h4>
                     <p>
-                        Création d'un site vitrine pour présenter notre intervieux journalistique sur les metier d'artisana
+                        Création d'un site vitrine de présentation pour une entreprise d'électriciter et de domotique.
                     </p>
-                    <a href="https://web-documentaire-artisant.netlify.app">En savoir plus <i class='bx bx-link-external'></i></a>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
-            </div>
-            <div class="item">
-                <img src="/assets/salaire.png">
+            </a>
+            <a href="https://web-documentaire-artisant.netlify.app" class="item site-web">
+                <img src="/assets/artisana.jpg">
                 <div class="info">
-                    <h4>Calculateur de salaire brut en net</h4>
+                    <h4>Web documentaire artisan</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                    Création d'un site vitrine pour présenter notre interview journalistique sur les métiers d'artisanat.
                     </p>
-                    <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/">En savoir plus <i class='bx bx-link-external'></i></a>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
-            </div>
-            <div class="item">
-                <img src="/assets/salaire.png">
+            </a>
+            <a href="https://sae501-salle317.alwaysdata.net/#/accueil" class="item site-web" site-web>
+                <img src="/assets/IUT.jpg">
                 <div class="info">
-                    <h4>Calculateur de salaire brut en net</h4>
+                    <h4>JPO IUT de Meaux ( MMI )</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                    Création d'un site de JPO pour la présentation de L'IUT de Meaux avec une visite virtuel.
                     </p>
-                    <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/">En savoir plus <i class='bx bx-link-external'></i></a>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
-            </div>
-            <div class="item">
-                <img src="/assets/salaire.png">
+            </a>
+            <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/" class="item site-web">
+                <img src="/assets/salaire.jpg">
                 <div class="info">
                     <h4>Calculateur de salaire brut en net</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        Création d'une application web pour calculer et convertir le salaire brut en salaire net.
                     </p>
-                    <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/">En savoir plus <i class='bx bx-link-external'></i></a>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
-            </div>
-            <div class="item">
-                <img src="/assets/salaire.png">
+            </a>
+            <a href="https://subdij.github.io/Calculateur-d-IMC/" class="item site-web">
+                <img src="/assets/IMC.jpg">
                 <div class="info">
-                    <h4>Calculateur de salaire brut en net</h4>
+                    <h4>Calculateur d'IMC</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        Création d'une application web pour calculer l'IMC pour savoir la corpulence des personnes.
                     </p>
-                    <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/">En savoir plus <i class='bx bx-link-external'></i></a>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
-            </div>
+            </a>
+            <a href="https://subdij.github.io/Calculateur-d-IMC/" class="item video">
+                <img src="/assets/jojo.jpg">
+                <div class="info">
+                    <h4>Publicité Steel Ball Run</h4>
+                    <p>
+                        Publicité pour Jojo Steel Ball Run créer sur After Effect. Elle met en avant le manga ainsi que ses personnages.
+                    </p>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=d5nWLi2pfPw&feature=youtu.be" class="item video">
+                <img src="/assets/vr.jpg">
+                <div class="info">
+                    <h4>Présentation Salle VR</h4>
+                    <p>
+                        Cette vidéo a été réalisée dans le but de promouvoir la salle de réalité virtuelle de l'IUT Gustave Eiffel. Équipée de matériel puissant, elle permet d'utiliser des logiciels gourmands en ressources et de faire tourner tous les jeux.
+                    </p>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
+                </div>
+            </a>
+            <a href="https://youtu.be/s8utquPDOB4" class="item video">
+                <img src="/assets/cv video.png">
+                <div class="info">
+                    <h4>CV Vidéo (Anglais)</h4>
+                    <p>
+                        Vidéo réalisé en MMI 1ère année, présentant son CV en anglais.
+                    </p>
+                    <span>En savoir plus <i class='bx bx-link-external'></i></span>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -110,11 +138,11 @@
                 <a href="/index.html">Ziyad CHAABI</a>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/index.html#skills">Compétences</a></li>
+                <li><a href="/pages/projets.html">Projets</a></li>
+                <li><a href="/index.html#about">Á propos</a></li>
+                <li><a href="/index.html#feedback">Avies</a></li>
             </ul>
             <div class="social-links">
                 <a href="https://github.com/Subdij"><i class='bx bxl-github'></i></a>
@@ -125,7 +153,7 @@
         <div class="separator"></div>
         <div class="bottom">
             <p>
-                © 2024 Portfolio Ziyad CHAABI. Tous droits réservés.
+                © Copyright 2024 Ziyad CHAABI Portfolio - Tous droits réservés.
             </p>
         </div>
     </footer>
