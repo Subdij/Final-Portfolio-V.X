@@ -7,7 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="/assets/chat 1.png" type="image/png">
     <link rel="stylesheet" href="/Styles/style.css">
-    <title>Ziyad CHAABI</title>
+    <title>Ziyad CHAABI - Projets</title>
 </head>
 
 <body>
@@ -22,11 +22,11 @@
             <li><a href="/index.html#skills">Compétences</a></li>
             <li><a href="/pages/projets.html">Projets</a></li>
             <li><a href="/index.html#about">Á propos</a></li>
-            <li><a href="/index.html#feedback">Avies</a></li>
+            <li><a href="/index.html#feedback">Avis</a></li>
         </ul>
 
-        <a href="mailto:ziyad.chaabi@lasalle-troyes.fr">
-            <button>Contact</button>
+        <a href="mailto:ziyadou2011@hotmail.fr">
+            <button class="contact">Contact</button>
         </a>
 
         <button id="menuButton" onclick="openMenu()">
@@ -41,11 +41,21 @@
             </div>
         </div>
 
-        <div class="filter-buttons">
-            <button onclick="filterProjects('all')">Tous</button>
-            <button onclick="filterProjects('site-web')">Site Web</button>
-            <button onclick="filterProjects('video')">Vidéo</button>
+        <div class="tab_center">
+            <div class="tab-container">
+                <input type="radio" name="tab" id="tab1" class="tab tab--1" />
+                <label onclick="filterProjects('all')" class="tab_label" for="tab1">Tous</label>
+
+                <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+                <label onclick="filterProjects('site-web')" class="tab_label" for="tab2">Site web</label>
+
+                <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+                <label onclick="filterProjects('video')" class="tab_label" for="tab3">Video</label>
+
+                <div class="indicator"></div>
+            </div>
         </div>
+
 
         <div class="portfo-items">
             <a href="/pages/Réseaux-Sûr-France.html" class="item site-web">
@@ -58,27 +68,28 @@
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
             </a>
-            <a href="https://web-documentaire-artisant.netlify.app" class="item site-web">
+            <a href="/pages/Web-documentaire-artisan.html" class="item site-web">
                 <img src="/assets/artisana.jpg">
                 <div class="info">
                     <h4>Web documentaire artisan</h4>
                     <p>
-                    Création d'un site vitrine pour présenter notre interview journalistique sur les métiers d'artisanat.
+                        Création d'un site vitrine pour présenter notre interview journalistique sur les métiers
+                        d'artisanat.
                     </p>
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
             </a>
-            <a href="https://sae501-salle317.alwaysdata.net/#/accueil" class="item site-web" site-web>
+            <a href="/pages/jpo-iut-meaux-mmi.html" class="item site-web">
                 <img src="/assets/IUT.jpg">
                 <div class="info">
                     <h4>JPO IUT de Meaux ( MMI )</h4>
                     <p>
-                    Création d'un site de JPO pour la présentation de L'IUT de Meaux avec une visite virtuel.
+                        Création d'un site de JPO pour la présentation de L'IUT de Meaux avec une visite virtuel.
                     </p>
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
             </a>
-            <a href="https://subdij.github.io/Calculateur-de-salaire-brut-en-net/" class="item site-web">
+            <a href="/pages/Calculateur-de-salaire-brut-en-net.html" class="item site-web">
                 <img src="/assets/salaire.jpg">
                 <div class="info">
                     <h4>Calculateur de salaire brut en net</h4>
@@ -98,12 +109,13 @@
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
             </a>
-            <a href="https://subdij.github.io/Calculateur-d-IMC/" class="item video">
+            <a href="/pages/Publicité-Steel-Ball-Run.html" class="item video">
                 <img src="/assets/jojo.jpg">
                 <div class="info">
                     <h4>Publicité Steel Ball Run</h4>
                     <p>
-                        Publicité pour Jojo Steel Ball Run créer sur After Effect. Elle met en avant le manga ainsi que ses personnages.
+                        Publicité pour Jojo Steel Ball Run créer sur After Effect. Elle met en avant le manga ainsi que
+                        ses personnages.
                     </p>
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
@@ -113,7 +125,9 @@
                 <div class="info">
                     <h4>Présentation Salle VR</h4>
                     <p>
-                        Cette vidéo a été réalisée dans le but de promouvoir la salle de réalité virtuelle de l'IUT Gustave Eiffel. Équipée de matériel puissant, elle permet d'utiliser des logiciels gourmands en ressources et de faire tourner tous les jeux.
+                        Cette vidéo a été réalisée dans le but de promouvoir la salle de réalité virtuelle de l'IUT
+                        Gustave Eiffel. Équipée de matériel puissant, elle permet d'utiliser des logiciels gourmands en
+                        ressources et de faire tourner tous les jeux.
                     </p>
                     <span>En savoir plus <i class='bx bx-link-external'></i></span>
                 </div>
@@ -142,7 +156,7 @@
                 <li><a href="/index.html#skills">Compétences</a></li>
                 <li><a href="/pages/projets.html">Projets</a></li>
                 <li><a href="/index.html#about">Á propos</a></li>
-                <li><a href="/index.html#feedback">Avies</a></li>
+                <li><a href="/index.html#feedback">Avis</a></li>
             </ul>
             <div class="social-links">
                 <a href="https://github.com/Subdij"><i class='bx bxl-github'></i></a>
@@ -159,7 +173,7 @@
     </footer>
 
     <script src="/script.js"></script>
-    
+
 </body>
 
 </html>
