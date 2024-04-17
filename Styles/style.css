@@ -1172,23 +1172,3 @@ footer .bottom .links a{
         width: 100%;
     }
 }
-
-
-#loader {
-    color: white;
-    background: black;
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    border-radius: 5px;
-    display: none; /* Caché par défaut */
-}
-
-#video-container {
-    position: relative;
-    width: 320px; /* Même largeur que la vidéo */
-    height: 240px; /* Même hauteur que la vidéo */
-}
