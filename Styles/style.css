@@ -510,16 +510,11 @@ nav button#menuButton{
 
 .icons-container {
     text-align: center;
-    display: block;
-    width: 100%; /* Ajustez cette valeur pour expérimenter */
-    max-width: 1200px; /* Ajustez en fonction de la largeur totale de 5 icônes */
-    margin: auto;
 }
 
 .icons-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block; /* S'assure que l'image utilise toute la largeur du conteneur */
 }
 
 .skills .skill-items .item .icon i{
