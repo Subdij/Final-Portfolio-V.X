@@ -508,6 +508,15 @@ nav button#menuButton{
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
+.icons-container {
+    text-align: center; /* Centrage du contenu */
+}
+
+.icons-container img {
+    max-width: 100%; /* Assure que l'image ne dépasse jamais la largeur de son conteneur */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
 .skills .skill-items .item .icon i{
     font-size: 26px;
     color: #006b6a;
