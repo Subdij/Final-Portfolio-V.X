@@ -80,24 +80,3 @@ sr.reveal('.social-links', {
     duration: 1000,
     easing: 'ease-in-out',
 });
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var video = document.getElementById('video-player');
-    var loader = document.getElementById('loader');
-
-    // Afficher le loader
-    loader.style.display = 'block';
-
-    // Événement chargé
-    video.oncanplaythrough = function() {
-        // Cacher le loader quand la vidéo est prête
-        loader.style.display = 'none';
-    };
-
-    // Gérer le cas où la vidéo ne peut pas être chargée
-    video.onerror = function() {
-        loader.innerHTML = "Erreur de chargement de la vidéo";
-    };
-});
